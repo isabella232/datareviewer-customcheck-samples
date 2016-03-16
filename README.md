@@ -1,4 +1,3 @@
-#ReviewerCustomCheckSamples
 #Topic : Create Custom Check (ArcGIS 10.4)
 
 ##Introduction
@@ -10,36 +9,20 @@ Custom checks are programs that can be incorporated into the ArcGIS Data Reviewe
 
 [ArcGIS Data Reviewer](http://www.esri.com/software/arcgis/extensions/arcgis-data-reviewer/index.html) provides over 42 out-of-the-box [checks](http://desktop.arcgis.com/en/arcmap/latest/extensions/data-reviewer/checks-in-data-reviewer.htm) that can be run individually or grouped into [batch jobs](http://desktop.arcgis.com/en/arcmap/latest/extensions/data-reviewer/batch-jobs-and-data-reviewer.htm) (.rbj files). If these included checks do not meet your specific requirements, these samples can help you write a custom check to meet your specific organization requirements.
 
-## Features 
+## Contents 
 
-This folder contains Data Reviewer Custom Check Samples that fall under the 'ReviewerCustomCheckSamples' topic:
+This folder contains following Data Reviewer Custom Check Samples.
 
-* [ReviewerCustomCheckSamples (c#)](https://github.com/dheerajv/ReviewerCustomCheckSamples)  
-
-
-## Instructions
-
-To contribute samples, it is recommended to have some background on Git and GitHub. 
-
-If you wish to contribute to this website, please  
-* fork this repository on GitHub,  
-* write your sample into a branch of your forked repo  
- * make sure that all class files have triple slash comments  
- * add the copyright header on all source files  
-* push your sample to a named branch, 
-* then send a pull request.
-
-##Resources
-* Click [here](http://desktop.arcgis.com/en/arcmap/latest/extensions/data-reviewer/what-is-data-reviewer.htm) to access web help for ArcGIS 10.4 Data Reviewer.
-* Click [here](http://desktop.arcgis.com/en/arcmap/latest/extensions/data-reviewer/pdf/Reviewer_check_poster.pdf) to view all ArcGIS Data Reviewer checks available.
-* Click [here](http://www.esri.com/services/professional-services/request-services) to request help from Esri Professional Services.
+* [CustomCheckFeatureNotOnFeature (c#)](https://github.com/ArcGIS/DataReviewerCustomCheckSamples/tree/master/CustomCheckFeatureNotOnFeature)
+* [CustomCheckIsNumeric (c#)](https://github.com/ArcGIS/DataReviewerCustomCheckSamples/tree/master/CustomCheckIsNumeric)
+* [CustomCheckValidateDomainBasedAttributes (c#)](https://github.com/ArcGIS/DataReviewerCustomCheckSamples/tree/master/CustomCheckValidateDomainBasedAttributes)
 
 ##Technical Environment
 The requirements for the machine on which you develop your ArcGIS Data Reviewer Custom Check are listed here.
 
 ####ArcGIS for Desktop or Server
 
-* ArcGIS 10.4 for Desktop Basic, Standard, or Advanced or  ArcGIS 10.4 for Server
+* ArcGIS 10.4 for Desktop Basic, Standard, or Advanced or ArcGIS 10.4 for Server
 
 ####ArcGIS Data Reviewer for Desktop or Server
 
@@ -57,6 +40,11 @@ Note: If you currently do not have a licensed copy of ArcGIS Data Reviewer, you 
 
 * Visual Studio 2013 (Professional, Premium, Ultimate, and Community Editions) 
 
+##Additional Resources
+* Click [here](http://desktop.arcgis.com/en/arcmap/latest/extensions/data-reviewer/what-is-data-reviewer.htm) to access web help for ArcGIS 10.4 Data Reviewer.
+* Click [here](http://desktop.arcgis.com/en/arcmap/latest/extensions/data-reviewer/pdf/Reviewer_check_poster.pdf) to view all ArcGIS Data Reviewer checks available.
+* Click [here](http://www.esri.com/services/professional-services/request-services) to request help from Esri Professional Services.
+
 ##Configure Create Custom Check
 
 You can use the Microsoft Visual Studio 2013 project files provided and in doing so you will learn how to develop a custom check for performing data validation according to the specific business needs of your organization. The steps below will guide you through developing and configuring custom checks.
@@ -64,8 +52,8 @@ You can use the Microsoft Visual Studio 2013 project files provided and in doing
 ##Implementation Steps
 
 In this section, you will learn to develop the custom checks that are provided. This will familiarize you with the objects and interfaces used to implement a custom check and how to create validation results that will be used by the Data Reviewer framework.
-     1. Create a new Visual Basic .NET or CSharp Class Library Project.
-     2. Add a reference to “ESRI.Reviewer.Public.Engine.Interop.dll”.
+     1. Create a new CSharp Class Library Project.
+     2. Add a reference to ESRI.Reviewer.Public.Engine.Interop.dll. If you are building the custom check for ArcGIS Data Reviewer for Desktop use the 32 bit version of this dll which is located in the ArcGIS Data Reviewer for Desktop install directory. If you are building the custom check for ArcGIS Data Reviewer for Server use the 64 bit version of this dll which is located in the ArcGIS Data Reviewer for Server install directory.
      3. Create a class that implements appropriate interfaces.
      4. Make class COM visible and assign a GUID to the class.
      5. In project settings, check the “Register for COM interop” checkbox.
@@ -79,7 +67,7 @@ There are three interfaces to choose from when creating a custom check: IPLTSCNT
 |:--------------------------- |:--------------|
 |Bitmap Property              |Return a handle to a bitmap for the custom check. (Not in use)|
 |Name Property                |Return a string representing the name of the custom check.|
-|OnCreate Function            |Called when Data Reviewer instantiates the custom check. Any setup that needs to happen prior to the call of Execute can happen in OnCreate.|
+|OnCreate Function            |Called when Data Reviewer instantiates the custom check. This method serves the purpose of initialization by hooking on to the ArcMap application. Any setup that needs to happen prior to the call of Execute can happen in OnCreate. If you are planning to run this check on ArcGIS Data Reviewer for Server, ensure you don’t use this.|
 |Long Description Property    |Return a string representing a detailed description of the custom check.|
 |Short Description Property   |Return a string representing a short description of the custom check.|
 |Execute Function             |Main function where custom validation will be handled. Depending on the interface implemented either an ISelectionSet, IObjectClass, or IWorkspace will be passed in. A comma delimited string of arguments is also passed in.|
@@ -124,4 +112,5 @@ Values returned by certain properties on the objects and interfaces explained ab
 |IPLTSError2.OID                                       |ObjectID|
 
 ####Deploy a Custom Check
-To deploy a custom check, the assembly must be copied to each machine it will be executed on and registered using the regasm.exe tool (e.g. regasm.exe C:\MyCustomCode\MyCustomCheck.dll \codebase). The location the assembly is copied to should not matter as long as all dependent assemblies can be resolved at runtime (ArcGIS and Data Reviewer assemblies are stored in the GAC).
+To deploy a custom check, the assembly must be copied to each machine it will be executed on and registered using the regasm.exe tool (e.g. regasm.exe C:\MyCustomCode\MyCustomCheck.dll \codebase). The location the assembly is copied to should not matter as long as all dependent assemblies can be resolved at runtime (ArcGIS and Data Reviewer assemblies are stored in the GAC). If you are building the custom check for ArcGIS Data Reviewer for Desktop use the 32 bit version of regasm.exe and if you are building the custom check for ArcGIS Data Reviewer for Server use the 64 bit version of regasm.exe. 
+
