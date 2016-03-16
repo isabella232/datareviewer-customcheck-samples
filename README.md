@@ -12,7 +12,6 @@ Custom checks are programs that can be incorporated into the ArcGIS Data Reviewe
 
 ## Features 
 
-
 This folder contains Data Reviewer Custom Check Samples that fall under the 'ReviewerCustomCheckSamples' topic:
 
 * [ReviewerCustomCheckSamples (c#)](https://github.com/dheerajv/ReviewerCustomCheckSamples)  
