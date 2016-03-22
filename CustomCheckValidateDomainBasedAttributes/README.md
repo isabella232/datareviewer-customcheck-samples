@@ -48,4 +48,4 @@ $Add a screenshot$
 15. Click OK.
 16. Click the Run button on Data Reviewer toolbar.
 17. For running this check in ArcGIS Data Reviewer for server configure and save this check in batch job using [Batch Job Manager](http://desktop.arcgis.com/en/arcmap/latest/extensions/data-reviewer/working-with-batch-jobs-in-data-reviewer.htm)
-18. Use [ArcGIS Data Reviewer API for JavaScript](https://developers.arcgis.com/javascript/jssamples/datareviewer_executebatchjob.html) or [ArcGIS Data Reviewer API for Flex](http://resources.arcgis.com/en/help/data-reviewer-server/flex/Samples/index.html#/Adhoc_Batch_Validation/01z400000006000000/) to execute the batch job in Server.
+18. Use [ArcGIS Data Reviewer API for JavaScript](https://developers.arcgis.com/javascript/jssamples/datareviewer_executebatchjob.html) to execute the batch job in Server.
