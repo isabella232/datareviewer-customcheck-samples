@@ -114,3 +114,5 @@ Values returned by certain properties on the objects and interfaces explained ab
 ####Deploy a Custom Check
 To deploy a custom check, the assembly must be copied to each machine it will be executed on and registered using the regasm.exe tool (e.g. regasm.exe C:\MyCustomCode\MyCustomCheck.dll \codebase). The location the assembly is copied to should not matter as long as all dependent assemblies can be resolved at runtime (ArcGIS and Data Reviewer assemblies are stored in the GAC). If you are building the custom check for ArcGIS Data Reviewer for Desktop use the 32 bit version of regasm.exe and if you are building the custom check for ArcGIS Data Reviewer for Server use the 64 bit version of regasm.exe. 
 
+[](Esri Tags: Data Reviewer Custom Check)
+[](Esri Language: C#)
