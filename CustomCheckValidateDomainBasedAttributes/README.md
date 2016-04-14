@@ -22,9 +22,6 @@ In this section, you will configure and run the ValidateDomainBasedAttributes cu
 5. Check the Data Reviewer extension check box from Customize > Extensions.
 6. Add the Data Reviewer toolbar from Customize > Toolbars.
 7. Click the Select Data Check drop-down on the Data Reviewer toolbar, expand Advanced Checks and click Custom Check.
-
-$Add a screenshot$
-
 8. Enter ValidateDomainBasedAttributes Check as the check name in the Check Title text box.
 9. Type of check select Workspace option and choose the input workspace for which the attributes in a feature classes/table need to be validated for domain constraints.
 10. Enter the GUID for the DLL associated with the custom check in the GUID text box.
