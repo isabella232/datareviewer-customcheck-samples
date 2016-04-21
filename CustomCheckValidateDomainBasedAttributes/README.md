@@ -40,7 +40,7 @@ Note: For ValidateDomainBasedAttributes, enter the feature class/table names for
 ```
 Note: The Description of Custom Check is used to describe the custom check. This will be preserved if this check is configured inside a batch job and will not be used while writing results to Data Reviewer.
 ```
-$Add a screenshot*****$
+![UI](../screenshots/ValidateDomainBasedAttributes.png)
 
 15. Click OK.
 16. Click the Run button on Data Reviewer toolbar.
