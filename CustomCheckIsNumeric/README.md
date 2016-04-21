@@ -37,7 +37,7 @@ In this section you will configure and run the IsNumeric custom check by using t
 
    ```Note: The _Description of Custom Check_ is used to describe the custom check. This will be preserved if this check is   configured inside a batch job and will not be used while writing results to Data Reviewer.```
    
-   ![UI](../Screenshots/ValidateDomainBasedAttributes.png) 
+   ![UI](../screenshots/Is Numeric check.png) 
    
 15. Click __OK__.
 16. Click the __Run__ button on the __Data Reviewer__ toolbar.
