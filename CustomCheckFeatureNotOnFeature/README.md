@@ -15,7 +15,8 @@ Visual Studio:          2013
 #How to use the sample
 In this section, you will configure and run the FeatureNotOnFeature custom check by using the _Custom Check_ option on the __Data Reviewer__ toolbar.
 
-1. Open Visual Studio and compile the CustomCheckFeatureNotOnFeature solution.
+1. Download and unzip the .zip file or clone the repository.
+2. Open Visual Studio and compile the CustomCheckFeatureNotOnFeature solution.
 2. Run the command prompt as an administrator and navigate to C:\\Windows\Microsoft.NET\Framework\v4.0\30319 folder.
 3. Enter the command _RegAsm.exe <path to your .dll> /codebase_.
 4. After the .dll is registered, open ArcMap.
