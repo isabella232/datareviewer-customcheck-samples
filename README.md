@@ -40,9 +40,7 @@ The requirements for the machine on which you develop your ArcGIS Data Reviewer 
 
 * ArcGIS 10.4 Data Reviewer for Desktop or Esri Production Mapping 10.4 or ArcGIS 10.4 Data Reviewer for Server
 
-----------
-     Note: If you currently do not have a licensed copy of ArcGIS Data Reviewer, 
-     you can request a free 60-day trial [here](http://www.esri.com/apps/products/offers/mapping/index.cfm?prd=reviewer).
+Note: If you currently do not have a licensed copy of ArcGIS Data Reviewer, you can request a free 60-day trial [here](http://www.esri.com/apps/products/offers/mapping/index.cfm?prd=reviewer).
 
 ####Supported .NET framework
 
