@@ -15,7 +15,8 @@ Visual Studio: 2013
 #How to use the sample
 In this section, you will configure and run the ValidateDomainBasedAttributes custom check by using the Custom Check option on the Data Reviewer toolbar. You can use any workspace in which you need to validate if the attributes in a feature class/table adhere to its domain constraints or not. Attribute field domains can be either coded values or ranges. The value entered for a field, especially if it is a range, can be outside the valid values. This is especially true if no validation has been performed during attribute editing. In addition, if data has been loaded from an external source, features may exist that violate both range and coded value domains. For instance, while your elevation attribute requires values that are between 0 and 4000, some of the data that has been imported can contain features with elevation values that are not within that range. You can use this custom check to find if there are attributes that are outside the domain values.
 
-1. Open Visual Studio 2013 and compile the CustomCheckValidateDomainBasedAttributes solution.
+1. Download and unzip the .zip file or clone the repository.
+2. Open Visual Studio 2013 and compile the CustomCheckValidateDomainBasedAttributes solution.
 2. Run the command prompt as an administrator. If you are planning to run this custom check in ArcMap then navigate to C:\Windows\Microsoft.NET\Framework\v4.0.30319 folder or else if you are planning to run this custom check in ArcGIS Server then navigate to C:\Windows\Microsoft.NET\Framework64\v4.0.30319 folder.
 3. Enter the command RegAsm.exe <path to your .dll> /codebase
 4. After the .dll is registered, open ArcMap.
