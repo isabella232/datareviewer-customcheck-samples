@@ -3,10 +3,6 @@
 ##Introduction
 Custom checks are programs that can be incorporated into the [ArcGIS Data Reviewer](http://www.esri.com/software/arcgis/extensions/arcgis-data-reviewer/index.html) framework. ArcGIS Data Reviewer provides over 42 out-of-the-box [checks](http://desktop.arcgis.com/en/arcmap/latest/extensions/data-reviewer/checks-in-data-reviewer.htm) that can be run individually or grouped into [batch jobs](http://desktop.arcgis.com/en/arcmap/latest/extensions/data-reviewer/batch-jobs-and-data-reviewer.htm) (.rbj files). If the included out-of-the-box checks do not meet your specific requirements, these samples can help you write a custom check to meet your specific organization requirements. ArcGIS Data Reviewer provides a framework for creating your own Custom checks. The Custom check allows you to run your code as part of a Reviewer check or batch job.
 
-----------
-     Note: You need to ensure that the custom code run by this check is registered on all machines on which the check 
-     is going to be run.
-
 The custom check can be configured from the [Data Reviewer Toolbar](http://desktop.arcgis.com/en/arcmap/latest/extensions/data-reviewer/a-quick-tour-of-data-reviewer.htm#ESRI_SECTION1_B440CCD836C7488D86B57113597C66AF).
 
 ![UI](./screenshots/CustomCheck.png)
@@ -26,8 +22,8 @@ The Custom check can be run using one of three options for the extent:
 Once you have defined the criteria for the check, you can configure the notes and a severity rating. The notes allow you to provide a more specific description for the feature that has been written to the Reviewer table and are copied to the Notes field in the Reviewer table. The severity rating allows you to indicate how important the results from a check are in terms of your quality assurance/quality control processes. The lower the number, the greater the priority the check's results have.
 
 ----------
-     Note: This sample was created using ArcGIS 10.4 Data Reviewer and may be freely used and redistributed "AS-IS". 
-     No technical support is provided.
+     Note: You need to ensure that the custom code run by this check is registered on all machines on which the check 
+     is going to be run.
 
 ## Contents 
 
