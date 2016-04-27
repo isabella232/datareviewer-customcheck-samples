@@ -1,7 +1,7 @@
 #Create Custom Check (ArcGIS 10.4)
 
 ##Introduction
-Custom checks are programs that can be incorporated into the [ArcGIS Data Reviewer](http://www.esri.com/software/arcgis/extensions/arcgis-data-reviewer/index.html) framework. ArcGIS Data Reviewer provides over 42 out-of-the-box [checks](http://desktop.arcgis.com/en/arcmap/latest/extensions/data-reviewer/checks-in-data-reviewer.htm) that can be run individually or grouped into [batch jobs](http://desktop.arcgis.com/en/arcmap/latest/extensions/data-reviewer/batch-jobs-and-data-reviewer.htm) (.rbj files). If these included checks do not meet your specific requirements, these samples can help you write a custom check to meet your specific organization requirements. ArcGIS Data Reviewer provides a framework for creating your own Custom checks. The Custom check allows you to run your code as part of a Reviewer check or batch job.
+Custom checks are programs that can be incorporated into the [ArcGIS Data Reviewer](http://www.esri.com/software/arcgis/extensions/arcgis-data-reviewer/index.html) framework. ArcGIS Data Reviewer provides over 42 out-of-the-box [checks](http://desktop.arcgis.com/en/arcmap/latest/extensions/data-reviewer/checks-in-data-reviewer.htm) that can be run individually or grouped into [batch jobs](http://desktop.arcgis.com/en/arcmap/latest/extensions/data-reviewer/batch-jobs-and-data-reviewer.htm) (.rbj files). If the included out-of-the-box checks do not meet your specific requirements, these samples can help you write a custom check to meet your specific organization requirements. ArcGIS Data Reviewer provides a framework for creating your own Custom checks. The Custom check allows you to run your code as part of a Reviewer check or batch job.
 
 ![UI](./screenshots/CustomCheck.png)
 
