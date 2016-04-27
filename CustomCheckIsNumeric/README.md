@@ -15,7 +15,8 @@ Visual Studio:          2013
 #How to use the sample
 In this section you will configure and run the IsNumeric custom check by using the _Custom Check_ option on the Data Reviewer toolbar. You can use any dataset in which you need to validate the contents of a field to find values that are not all numeric.
 
-1. Open Visual Studio and compile the CustomCheckIsNumeric solution.
+1. Download and unzip the .zip file or clone the repository.
+2. Open Visual Studio and compile the CustomCheckIsNumeric solution.
 2. Run the command prompt as an administrator and navigate to C:\\Windows\Microsoft.NET\Framework\v4.030319 folder.
 3. Enter the command RegAsm.exe <path to your .dll> /codebase.
 4. After the .dll is registered, open ArcMap.
