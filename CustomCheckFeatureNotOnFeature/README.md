@@ -26,7 +26,6 @@ In this section, you will configure and run the FeatureNotOnFeature custom check
 9. Enter _Feature Not On Feature Check_ as the check name in the __Check Title__ text box.
 10. Click the __Type of Check__ drop-down and choose the _Input Feature class_ which contains the field which needs to be validated.
 11. Enter the GUID for the DLL associated with the custom check in the __GUID__ text box.
-
     ```Note: The GUID of the CSharp FeatureNotOnFeature custome check is {c2779add-7603-4fd4-bf68-4e5e3021a67c}.```
     
 12. Enter an argument in the __Argument__ cell.
