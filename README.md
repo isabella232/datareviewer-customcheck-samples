@@ -70,12 +70,13 @@ You can use the Microsoft Visual Studio 2013 project files provided and in doing
 ##Implementation Steps
 
 In this section, you will learn to develop the custom checks that are provided. This will familiarize you with the objects and interfaces used to implement a custom check and how to create validation results that will be used by the Data Reviewer framework.
-     1. Create a new CSharp Class Library Project.
-     2. Add a reference to ESRI.Reviewer.Public.Engine.Interop.dll. If you are building the custom check for ArcGIS Data Reviewer for Desktop use the 32 bit version of this dll which is located in the ArcGIS Data Reviewer for Desktop install directory. If you are building the custom check for ArcGIS Data Reviewer for Server use the 64 bit version of this dll which is located in the ArcGIS Data Reviewer for Server install directory.
-     3. Create a class that implements appropriate interfaces.
-     4. Make class COM visible and assign a GUID to the class.
-     5. In project settings, check the “Register for COM interop” checkbox.
-     6. In project settings, set target framework to .NET Framework 4.5.
+
+1. Create a new CSharp Class Library Project.
+2. Add a reference to ESRI.Reviewer.Public.Engine.Interop.dll. If you are building the custom check for ArcGIS Data Reviewer for Desktop use the 32 bit version of this dll which is located in the ArcGIS Data Reviewer for Desktop install directory. If you are building the custom check for ArcGIS Data Reviewer for Server use the 64 bit version of this dll which is located in the ArcGIS Data Reviewer for Server install directory.
+3. Create a class that implements appropriate interfaces.
+4. Make class COM visible and assign a GUID to the class.
+5. In project settings, check the “Register for COM interop” checkbox.
+6. In project settings, set target framework to .NET Framework 4.5.
 
 ####Interfaces
 
