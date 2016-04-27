@@ -50,4 +50,6 @@ In this section, you will configure and run the FeatureNotOnFeature custom check
     
 16. Click __OK__.
 17. Click the __Run__ button on the __Data Reviewer__ toolbar.
+18. For running this check in ArcGIS Data Reviewer for server configure and save this check in batch job using [Batch Job Manager](http://desktop.arcgis.com/en/arcmap/latest/extensions/data-reviewer/working-with-batch-jobs-in-data-reviewer.htm)
+19. Use [ArcGIS Data Reviewer API for JavaScript](https://developers.arcgis.com/javascript/jssamples/datareviewer_executebatchjob.html) to execute the batch job in Server.
 
