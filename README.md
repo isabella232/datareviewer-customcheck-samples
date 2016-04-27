@@ -21,10 +21,6 @@ The Custom check can be run using one of three options for the extent:
 
 Once you have defined the criteria for the check, you can configure the notes and a severity rating. The notes allow you to provide a more specific description for the feature that has been written to the Reviewer table and are copied to the Notes field in the Reviewer table. The severity rating allows you to indicate how important the results from a check are in terms of your quality assurance/quality control processes. The lower the number, the greater the priority the check's results have.
 
-----------
-     Note: You need to ensure that the custom code run by this check is registered on all machines on which the check 
-     is going to be run.
-
 ## Contents 
 
 This folder contains following Data Reviewer Custom Check Samples.
@@ -45,7 +41,8 @@ The requirements for the machine on which you develop your ArcGIS Data Reviewer 
 * ArcGIS 10.4 Data Reviewer for Desktop or Esri Production Mapping 10.4 or ArcGIS 10.4 Data Reviewer for Server
 
 ----------
-     Note: If you currently do not have a licensed copy of ArcGIS Data Reviewer, you can request a free 60-day trial [here](http://www.esri.com/apps/products/offers/mapping/index.cfm?prd=reviewer).
+     Note: If you currently do not have a licensed copy of ArcGIS Data Reviewer, 
+     you can request a free 60-day trial [here](http://www.esri.com/apps/products/offers/mapping/index.cfm?prd=reviewer).
 
 ####Supported .NET framework
 
