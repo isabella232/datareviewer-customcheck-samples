@@ -1,13 +1,29 @@
 #Create Custom Check (ArcGIS 10.4)
 
 ##Introduction
-Custom checks are programs that can be incorporated into the ArcGIS Data Reviewer framework. These programs can be executed as individual checks or as part of a batch job. They can validate a specific set of features, an entire feature class or multiple feature classes/tables within a workspace.
+Custom checks are programs that can be incorporated into the ArcGIS Data Reviewer framework. [ArcGIS Data Reviewer](http://www.esri.com/software/arcgis/extensions/arcgis-data-reviewer/index.html) provides over 42 out-of-the-box [checks](http://desktop.arcgis.com/en/arcmap/latest/extensions/data-reviewer/checks-in-data-reviewer.htm) that can be run individually or grouped into [batch jobs](http://desktop.arcgis.com/en/arcmap/latest/extensions/data-reviewer/batch-jobs-and-data-reviewer.htm) (.rbj files). If these included checks do not meet your specific requirements, these samples can help you write a custom check to meet your specific organization requirements. ArcGIS Data Reviewer provides a framework for creating your own Custom checks. The Custom check allows you to run your code as part of a Reviewer check or batch job.
+
+----------
+     Note: You need to ensure that the custom code run by this check is registered on all machines on which the check 
+     is going to be run.
+
+This check allows you to specify the following:
+
+* Extent on which you want to run the check
+* GUID of the custom check
+* Description of the check validation
+
+The Custom check can be run using one of three options for the extent:
+
+* Selection Set—The feature or object class selected in a single feature or object class, with or without a SQL query defined on the dialog box
+* Object Class—All the features or objects in a single feature class or object class
+* Workspace—All the feature classes or object classes at the root level of a workspace
+
+Once you have defined the criteria for the check, you can configure the notes and a severity rating. The notes allow you to provide a more specific description for the feature that has been written to the Reviewer table and are copied to the Notes field in the Reviewer table. The severity rating allows you to indicate how important the results from a check are in terms of your quality assurance/quality control processes. The lower the number, the greater the priority the check's results have.
 
 ----------
      Note: This sample was created using ArcGIS 10.4 Data Reviewer and may be freely used and redistributed "AS-IS". 
      No technical support is provided.
-
-[ArcGIS Data Reviewer](http://www.esri.com/software/arcgis/extensions/arcgis-data-reviewer/index.html) provides over 42 out-of-the-box [checks](http://desktop.arcgis.com/en/arcmap/latest/extensions/data-reviewer/checks-in-data-reviewer.htm) that can be run individually or grouped into [batch jobs](http://desktop.arcgis.com/en/arcmap/latest/extensions/data-reviewer/batch-jobs-and-data-reviewer.htm) (.rbj files). If these included checks do not meet your specific requirements, these samples can help you write a custom check to meet your specific organization requirements.
 
 ## Contents 
 
