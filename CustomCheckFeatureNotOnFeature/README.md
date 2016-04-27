@@ -17,19 +17,19 @@ In this section, you will configure and run the FeatureNotOnFeature custom check
 
 1. Download and unzip the .zip file or clone the repository.
 2. Open Visual Studio and compile the CustomCheckFeatureNotOnFeature solution.
-2. Run the command prompt as an administrator and navigate to C:\\Windows\Microsoft.NET\Framework\v4.0\30319 folder.
-3. Enter the command _RegAsm.exe <path to your .dll> /codebase_.
-4. After the .dll is registered, open ArcMap.
-5. Check the __Data Reviewer__ extension check box from __Customize > Extensions__.
-6. Add the __Data Reviewer__ toolbar from __Customize > Toolbars__.
-7. Click the __Select Data Check__ drop-down on the __Data Reviewer__ toolbar, expand __Advanced Checks__ and click __Custom Check__.
-8. Enter _Feature Not On Feature Check_ as the check name in the __Check Title__ text box.
-9. Click the __Type of Check__ drop-down and choose the _Input Feature class_ which contains the field which needs to be validated.
-10. Enter the GUID for the DLL associated with the custom check in the __GUID__ text box.
+3. Run the command prompt as an administrator. If you are planning to run this custom check in ArcMap then navigate to C:\Windows\Microsoft.NET\Framework\v4.0.30319 folder or else if you are planning to run this custom check in ArcGIS Server then navigate to C:\Windows\Microsoft.NET\Framework64\v4.0.30319 folder.
+4. Enter the command _RegAsm.exe <path to your .dll> /codebase_.
+5. After the .dll is registered, open ArcMap.
+6. Check the __Data Reviewer__ extension check box from __Customize > Extensions__.
+7. Add the __Data Reviewer__ toolbar from __Customize > Toolbars__.
+8. Click the __Select Data Check__ drop-down on the __Data Reviewer__ toolbar, expand __Advanced Checks__ and click __Custom Check__.
+9. Enter _Feature Not On Feature Check_ as the check name in the __Check Title__ text box.
+10. Click the __Type of Check__ drop-down and choose the _Input Feature class_ which contains the field which needs to be validated.
+11. Enter the GUID for the DLL associated with the custom check in the __GUID__ text box.
 
     ```Note: The GUID of the CSharp FeatureNotOnFeature custome check is {c2779add-7603-4fd4-bf68-4e5e3021a67c}.```
     
-11. Enter an argument in the __Argument__ cell.
+12. Enter an argument in the __Argument__ cell.
 
     Tip: The FeatureNotOnFeature custom check uses 7 arguments. Only the first 2 are required.  The arguments are as follows: 
     * Target feature class
@@ -40,14 +40,14 @@ In this section, you will configure and run the FeatureNotOnFeature custom check
     * The spatial relationship string if the third argument is a 9 - esriSpatialRelRelation
     * The message to be associated with each validation result
 
-12. If necessary, enter descriptive text for the check results in the __Notes__ text box in the _Reviewer Remarks_ area.
-13. If necessary, click the __Severity__ drop-down and choose a value that indicates the priority of the checks results in the _Reviewer Remarks_ area.
-14. If necessary, enter a description of what the check is validating in the __Description of Custom Check__ text box.
+13. If necessary, enter descriptive text for the check results in the __Notes__ text box in the _Reviewer Remarks_ area.
+14. If necessary, click the __Severity__ drop-down and choose a value that indicates the priority of the checks results in the _Reviewer Remarks_ area.
+15. If necessary, enter a description of what the check is validating in the __Description of Custom Check__ text box.
 
     ```Note: The Description of Custom Check is used to describe the custom check. This will be preserved if this check is configured inside a batch job and will not be used while writing results to Data Reviewer.```
     
     ![UI](../screenshots/Feature Not On Feature check .png)
     
-15. Click __OK__.
-16. Click the __Run__ button on the __Data Reviewer__ toolbar.
+16. Click __OK__.
+17. Click the __Run__ button on the __Data Reviewer__ toolbar.
 
