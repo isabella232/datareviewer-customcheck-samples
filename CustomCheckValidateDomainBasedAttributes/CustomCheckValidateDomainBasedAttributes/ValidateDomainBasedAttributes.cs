@@ -8,7 +8,7 @@ using System.Collections.Generic;
 
 ////////////////////////////////////////////////////////////////////////////////
 //
-// Copyright (c) 2004-2016 Esri
+// Copyright (c) 2008-2016 Esri
 //
 // All rights reserved under the copyright laws of the United States
 // and applicable international laws, treaties, and conventions.
