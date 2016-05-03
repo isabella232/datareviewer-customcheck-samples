@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("CustomCheckIsNumeric")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("ESRI")]
+[assembly: AssemblyCompany("Esri")]
 [assembly: AssemblyProduct("CustomCheckIsNumeric")]
-[assembly: AssemblyCopyright("Copyright © ESRI 2010")]
+[assembly: AssemblyCopyright("Copyright © Esri 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
