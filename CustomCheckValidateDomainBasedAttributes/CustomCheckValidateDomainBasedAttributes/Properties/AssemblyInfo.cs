@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("CustomCheckValidateDomainBasedAttributes")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("ESRI")]
+[assembly: AssemblyCompany("Esri")]
 [assembly: AssemblyProduct("CustomCheckValidateDomainBasedAttributes")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
