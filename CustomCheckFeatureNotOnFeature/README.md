@@ -1,7 +1,7 @@
 #Data Reviewer Custom Check Samples
 ##FeatureNotOnFeature
 
-This sample demonstrates how to *....need text here that describes this custom check at a high level*
+This sample demonstrates how to verify when a spatial relationship does not exist between two features.
 
 ```
 Language:               C#
