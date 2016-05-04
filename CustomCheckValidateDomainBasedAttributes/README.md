@@ -24,7 +24,7 @@ In this section, you will configure and run the ValidateDomainBasedAttributes cu
 7. Add the Data Reviewer toolbar from __Customize > Toolbars__.
 8. Click the __Select Data Check__ drop-down on the __Data Reviewer__ toolbar, expand __Advanced Checks__ and click __Custom Check__.
 9. Enter ValidateDomainBasedAttributes Check as the check name in the __Check Title__ text box.
-10. In __Type of check__, select the *Workspace* option and choose the input workspace for which the attributes in a feature classes/table need to be validated for domain constraints.
+10. Click the __Type of check__ drop-down, select the *Workspace* option and choose the input workspace for which the attributes in a feature classes/table need to be validated for domain constraints.
 11. Enter the __GUID__ for the DLL associated with the custom check in the __GUID__ text box.
 
   ```Note: The GUID of the ValidateDomainBasedAttributes custom check is {10F6A0EB-5415-4837-B50F-62C26DB3F4E7}.```
