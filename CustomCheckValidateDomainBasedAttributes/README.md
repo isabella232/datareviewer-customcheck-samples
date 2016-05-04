@@ -24,23 +24,22 @@ In this section, you will configure and run the ValidateDomainBasedAttributes cu
 7. Add the Data Reviewer toolbar from __Customize > Toolbars__.
 8. Click the __Select Data Check__ drop-down on the __Data Reviewer__ toolbar, expand __Advanced Checks__ and click __Custom Check__.
 9. Enter ValidateDomainBasedAttributes Check as the check name in the __Check Title__ text box.
-10. In __Type of check__, select the __Workspace__ option and choose the input workspace for which the attributes in a feature classes/table need to be validated for domain constraints.
+10. In __Type of check__, select the *Workspace* option and choose the input workspace for which the attributes in a feature classes/table need to be validated for domain constraints.
 11. Enter the __GUID__ for the DLL associated with the custom check in the __GUID__ text box.
-```
-Note: The GUID of the ValidateDomainBasedAttributes custom check is {10F6A0EB-5415-4837-B50F-62C26DB3F4E7}.
-```
+
+  ```Note: The GUID of the ValidateDomainBasedAttributes custom check is {10F6A0EB-5415-4837-B50F-62C26DB3F4E7}.```
+
 
 12. Type an argument in the __Argument__ cell.
-```
-Note: For ValidateDomainBasedAttributes, enter the feature class/table names for which the attributes need to be validated for domain constraints.
-```
+
+  ```Note: For ValidateDomainBasedAttributes, enter the feature class/table names for which the attributes need to be validated for domain constraints.```
 
 13. If necessary, enter descriptive text for the check results in the Notes text box in the __Reviewer Remarks__ area.
 14. If necessary, click the __Severity__ drop-down and choose a value that indicates the priority of the checks results in the __Reviewer Remarks__ area.
 15. If necessary, enter a description of what the check is validating in the __Description of Custom Check__ text box.
-```
-Note: The Description of Custom Check is used to describe the custom check. This will be preserved if this check is configured inside a batch job and will not be used while writing results to Data Reviewer.
-```
+
+  ```Note: The Description of Custom Check is used to describe the custom check. This will be preserved if this check is configured inside a batch job and will not be used while writing results to Data Reviewer.```
+
 ![UI](../screenshots/ValidateDomainBasedAttributes.png)
 
 16. Click __OK__.
