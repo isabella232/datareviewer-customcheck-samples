@@ -51,10 +51,10 @@
     <Reference Include="ESRI.ArcGIS.Geometry, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="ESRI.Reviewer.Public.Engine.Interop">
-      <HintPath>..\..\..\..\..\..\..\..\PLTS\Bin\ESRI.Reviewer.Public.Engine.Interop.dll</HintPath>
+    <Reference Include="ESRI.Reviewer.Public.Engine.Interop, Version=10.4.0.0, Culture=neutral, PublicKeyToken=2be8226146214577, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>False</EmbedInteropTypes>
-      <Private>True</Private>
+      <HintPath>..\..\..\..\Program Files (x86)\ArcGIS\ArcGISDataReviewer\Desktop10.4\Bin\ESRI.Reviewer.Public.Engine.Interop.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
